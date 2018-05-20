@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    order: 1;
+}
+
+.logo {
+    float: left;
+    width: 40%;
+    display: inline-block;
+    padding: 1%;
+    order: 2;
+}
+
+.logo img {
+    width: 100%
+}
+
+.authenticate {
+    float: right;
+    width: 30%;
+    margin: 4%;
+    text-align: center;
+    display: inline-block;
+    order: 3;
+}
+
+.filterbox {
+    width: 24%;
+    margin: 1%;
+    order: 4;
+}
+
+.phoneBoxHolder {
+    order: 5;
+    margin: 1%;
+    width: 72%;
+}
+
+.phoneBox {
+    width: 250px;
+    margin: 1%;
+    font-family: sans-serif;
+}
+
+.phoneBox img {
+    width: 100%;
+}
+
+.placeholder {
+    font-family: inherit;
+}
+
