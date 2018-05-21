@@ -38,12 +38,9 @@ const testModel = {
 
 let phones = [Curve8330, testModel];
 
-
+let results = [];
 
 $(document).ready(function() {
-
-    console.log("ready!");
-    console.log(phones.length);
 
     function createPhoneBox(phone) {
         let phoneHTML = 
@@ -58,22 +55,18 @@ $(document).ready(function() {
                 <p class="price">${phone.price}</p>
             </div>`;
         return phoneHTML;
-        console.log("I'm the renderer!");            
     };
     
     function renderPhones(phones) {
-        let results = '';
+        let currentPhone = '';
         for (let phone of phones) {
-            results=createPhoneBox(phone);
-            return results;
+            currentPhone=createPhoneBox(phone);
+            results.push(currentPhone);
         };
-        console.log("So can I!")
+        return results;
     };
 
-    $( "div.placeholder" ).replaceWith(renderPhones(phones)) 
+    $( "div.placeholder" ).html(renderPhones(phones)) 
         return $(this);
-
     });
-    
-    console.log("OK!");
 ;
