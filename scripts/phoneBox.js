@@ -17,6 +17,8 @@ const Curve8330 = {
     price:29.08
 };
 
+let phones = [Curve8330];
+
 function createPhoneBox(phone) {
     let phoneHTML = 
         `<div class="phoneBox"> +
@@ -34,8 +36,6 @@ function createPhoneBox(phone) {
         
 };
 
-let phones='';
-
 function renderPhones(phones) {
     let results = '';
     for (phone of phones) {
@@ -46,12 +46,14 @@ function renderPhones(phones) {
 
 $(document).ready(function() {
 
-    createPhoneBox(Curve8330);
+    console.log("ready!");
+
+    createPhoneBox(phones);
 
     renderPhones(phones);
 
     $("div.placeholder").replaceWith(renderPhones(phones));
 
-});
+    console.log("OK!");
 
-console.log(createPhoneBox(Curve8330));
+});
