@@ -56,3 +56,70 @@ header {
     font-family: inherit;
 }
 
+.price {
+    font-weight: bold;
+    color: red;
+}
+
+a:link.title {
+    color: black;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-size: 18px;
+} 
+
+a:visited.title {
+    color: black;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-size: 18px;
+} 
+
+a:active.title {
+    color: black;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a:hover.title {
+    color: blue;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a:link.price {
+    font-weight: inherit;
+    color: inherit;
+    text-decoration-line: none;
+    font-size: inherit;
+}
+
+a:visited.price {
+    font-weight: inherit;
+    color: inherit;
+    text-decoration-line: none;
+    font-size: inherit;
+}
+
+a:active.price {
+    font-weight: inherit;
+    color: inherit;
+    text-decoration-line: none;
+    font-size: inherit;
+}
+
+a:hover.price {
+    font-weight: inherit;
+    color: green;
+    text-decoration-line: underline;
+    font-size: inherit;
+}
+
+.login {
+    order: 4;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
