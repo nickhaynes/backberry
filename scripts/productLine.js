@@ -1,6 +1,6 @@
 const Curve8330 = {
     uniqueID:'x4589',
-    title:'BlackBerry Curve 8330',
+    title:'Curve 8330',
     picture:'8330',
     family:'Curve',
     model:'8330',
@@ -19,7 +19,7 @@ const Curve8330 = {
 
 const Quark6230 = {
     uniqueID:'y8476',
-    title:'BlackBerry Quark 6230',
+    title:'Quark 6230',
     picture:'6230',
     family:'Quark',
     model:'6230',
@@ -38,7 +38,7 @@ const Quark6230 = {
 
 const BoldTouch9900 = {
     uniqueID:'t7521',
-    title:'BlackBerry Bold Touch 9900',
+    title:'Bold Touch 9900',
     picture:'9900',
     family:'Bold Touch',
     model:'9900',
@@ -57,7 +57,7 @@ const BoldTouch9900 = {
 
 const Pearl8120 = {
     uniqueID:'s1465',
-    title:'BlackBerry Pearl 8120',
+    title:'Pearl 8120',
     picture:'8120',
     family:'Pearl',
     model:'8120',
@@ -76,7 +76,7 @@ const Pearl8120 = {
 
 const Curve8310 = {
     uniqueID:'r1942',
-    title:'BlackBerry Curve 8310',
+    title:'Curve 8310',
     picture:'8310',
     family:'Curve',
     model:'8310',
@@ -95,7 +95,7 @@ const Curve8310 = {
 
 const Bold9000 = {
     uniqueID:'m7148',
-    title:'BlackBerry Bold 9000',
+    title:'Bold 9000',
     picture:'9000',
     family:'Bold',
     model:'9000',
@@ -114,7 +114,7 @@ const Bold9000 = {
 
 const BlackBerry7230 = {
     uniqueID:'g8342',
-    title:'BlackBerry 7230',
+    title:'7230',
     picture:'7230',
     family:'72XX',
     model:'7230',
