@@ -254,3 +254,11 @@ a:hover.price {
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px;
 }
+
+/* PRODUCT PAGES */
+
+.product {
+    order: 5;
+    margin: 1% auto 0 auto;
+    width: 90%;
+}
