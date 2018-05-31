@@ -26,7 +26,9 @@ $(document).ready(function() {
         console.log(results);
     };
 
-    $( "div.products" ).html(renderPhones(phones)) 
+    console.log(phoneObj);
+
+    $( "div.products" ).html(renderPhones(phoneObj)) 
         return $(this);
     });
 ;
