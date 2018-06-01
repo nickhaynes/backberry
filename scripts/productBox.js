@@ -32,7 +32,19 @@ $(document).ready(function() {
 
     productCode = `
         <h2>BlackBerry ${phoneObj[x].title}</h2>
-        <img src="../images/${phoneObj[x].picture}.png">
+        <section class="mainImage"><img src="../images/${phoneObj[x].picture}.png"></section>
+        <section class="phoneAttributes">
+        <ul>
+            <li>Family: ${phoneObj[x].family}, ${phoneObj[x].series} series</li>
+            <li>Carrier and Network: ${phoneObj[x].network}, ${phoneObj[x].carrier}</li>
+            <li>Display: ${phoneObj[x].screenSize} pixels, ${phoneObj[x].color}</li>
+            <li>Touchscreen: ${phoneObj[x].touchscreen}</li>
+            <li>Bluetooth: ${phoneObj[x].bluetooth}</li>
+            <li>Cursor Type: ${phoneObj[x].padBallWheel}</li>
+            <li>Extra Features: ${phoneObj[x].extraFeatures}</li>
+        </ul>
+        <section class="phoneDescription">${phoneObj[x].shortDescription}</section>
+        <section class="buyPhone">${phoneObj[x].price}</section>
     `;
     mainProduct.innerHTML = productCode;
 });

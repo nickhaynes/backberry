@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Backberry || Your Source for Retro Blackberry</title>
+
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../scripts/productLine.js"></script>
+<script src="../scripts/productBox.js"></script>
+<script src="../scripts/basic.js"></script>
+
+<link rel="stylesheet" href="../styles/basic.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logoWithTagline.png" alt="Backberry.com--Your source for retro Blackberry phones"></a>
+        </div>
+
+        <div class="authenticate">
+            
+            <button class="loginButton" onclick="document.getElementById('modalLogin').style.display='block'">Login</button>
+            
+                <div id="modalLogin" class="modal">
+                    <span onclick="document.getElementById('modalLogin').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
+
+                    <form class="modal-content animate" action="scripts/php/usersdb.php">
+                        <div class="modalLogo">
+                            <img src="../images/modalLogo.png" alt="Backberry.com--Your source for retro Blackberry" class="modalLogo">
+                        </div>
+                        <div class="modalForm">
+                            <label for="username"><b>Username/Email</b></label>
+                            <input type="text" placeholder="Enter username or email" name="username" required>
+                            <label for="password"><b>Password</b></label>
+                            <input type="password" placeholder="Enter password" name="password" required>
+                            <button type="submit" class="modalLoginButton">Login</button>
+                            <label><input type="checkbox" checked="checked" name="remember">Remember me</label>
+                        </div>
+                        <div class="cancelOrRetrieve">
+                            <button type="button" onclick="document.getElementById('modalLogin').style.display='none'" class="cancelButton">Cancel</button>
+                            <span class="password">Forget <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+            
+                <button class="loginButton" onclick="window.location.href='signup.html'">Sign Up</button>
+                            
+        </div>
+
+    </header>
+
+    <div id="main" data-type="BlackBerry7230" class="product"></div>
+    
+
+</body>
+
+</html>
