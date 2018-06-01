@@ -81,7 +81,7 @@ phoneObj =[
         color:'QVGA with 65K colors',
         screenSize:'320 x 240',
         bluetooth:'no',
-        carrier:'Vodafone (Germany, The Netherlands',
+        carrier:'Vodafone (Germany, The Netherlands)',
         touchscreen:'false',
         padBallWheel:'ball',
         extraFeatures:'Email, MMS/SMS, 2 MP camera, GPS receiver, speakerphone, Bluetooth, internal microSD, polyphonic ringtones, media player',
