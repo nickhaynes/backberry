@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background:#f6f6f6;
 }
 
 header {
@@ -57,6 +58,11 @@ ul {
     flex-wrap: wrap;
 }
 
+.deets {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
 /* PHONES */
 
 .phoneBoxHolder {
@@ -66,55 +72,80 @@ ul {
 }
 
 .phoneBox {
-    width: 250px;
+    width: 400px;
     margin: 1%;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
     border: #ccc;
-    border-style: solid;
-    border-width: thin;
-    border-radius:5px;
+    border-style: none;
     padding: 9px 9px 0px 9px;
-    box-shadow: 1px 1px 5px 1px #888;
+    box-shadow: 1px 1px 3px 1px #ddd;
+    background:#ffffff;
 }
 
 .phoneBox img {
-    width: 100%;
+    width: 50%;
+    float: left;
+    /* -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.3))) */
+}
+
+h2 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .price {
-    font-weight: bold;
+    font-weight: 700;
     color: red;
 }
 
 a:link.title {
     color: black;
     text-decoration-line: none;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
 } 
 
 a:visited.title {
     color: black;
     text-decoration-line: none;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
 } 
 
 a:active.title {
     color: black;
     text-decoration-line: none;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 a:hover.title {
     color: blue;
     text-decoration-line: none;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 a:link.price {
+    font-family: 'Open Sans', sans-serif;
     font-weight: inherit;
     color: inherit;
     text-decoration-line: none;
@@ -122,6 +153,7 @@ a:link.price {
 }
 
 a:visited.price {
+    font-family: 'Open Sans', sans-serif;
     font-weight: inherit;
     color: inherit;
     text-decoration-line: none;
@@ -129,6 +161,7 @@ a:visited.price {
 }
 
 a:active.price {
+    font-family: 'Open Sans', sans-serif;
     font-weight: inherit;
     color: inherit;
     text-decoration-line: none;
@@ -136,6 +169,7 @@ a:active.price {
 }
 
 a:hover.price {
+    font-family: 'Open Sans', sans-serif;
     font-weight: inherit;
     color: green;
     text-decoration-line: underline;
@@ -261,4 +295,39 @@ a:hover.price {
     order: 5;
     margin: 1% auto 0 auto;
     width: 90%;
+}
+
+.mainImage {
+    float: left;
+    width: 25%;
+    margin-right: 2.5%;
+}
+
+.mainImage img{
+    width: 100%;
+    padding-top: 5%;
+}
+
+.phoneAttributes {
+    float: right;
+    width: 70%;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+.phoneAttributes ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 25px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 25px;
+    column-count: 2;
+    column-gap: 25px;
+    list-style-type: circle;
+ }
+
+.phoneAttributes li {
+    -moz-column-width: 300px;
+    -webkit-column-width: 300px;
+    column-width: 300px;
 }

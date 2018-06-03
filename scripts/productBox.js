@@ -34,17 +34,30 @@ $(document).ready(function() {
         <h2>BlackBerry ${phoneObj[x].title}</h2>
         <section class="mainImage"><img src="../images/${phoneObj[x].picture}.png"></section>
         <section class="phoneAttributes">
+        <h3> Description</h3>
+        <p>${phoneObj[x].shortDescription}</p>
+        <h3> Features </h3>
         <ul>
-            <li>Family: ${phoneObj[x].family}, ${phoneObj[x].series} series</li>
+            <li>${phoneObj[x].family} family, ${phoneObj[x].series} series</li>
             <li>Carrier and Network: ${phoneObj[x].network}, ${phoneObj[x].carrier}</li>
-            <li>Display: ${phoneObj[x].screenSize} pixels, ${phoneObj[x].color}</li>
+            <li>${phoneObj[x].screenSize} pixel ${phoneObj[x].color} display</li>
+            <li>${phoneObj[x].padBallWheel} cursor</li>
             <li>Touchscreen: ${phoneObj[x].touchscreen}</li>
             <li>Bluetooth: ${phoneObj[x].bluetooth}</li>
-            <li>Cursor Type: ${phoneObj[x].padBallWheel}</li>
             <li>Extra Features: ${phoneObj[x].extraFeatures}</li>
         </ul>
-        <section class="phoneDescription">${phoneObj[x].shortDescription}</section>
-        <section class="buyPhone">${phoneObj[x].price}</section>
+        <section class="buyPhone"
+            <p>$${phoneObj[x].price}</p>
+            <?php require_once('./config.php'); ?>
+
+            <form action="charge.php" method="post">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="<?php echo $stripe['publishable_key']; ?>"
+                    data-description="${phoneObj[x].title}, ID ${phoneObj[x].uniqueID}"
+                    data-amount="${phoneObj[x].price}"
+                    data-locale="auto"></script>
+                </form>
+        </section>
     `;
     mainProduct.innerHTML = productCode;
 });
